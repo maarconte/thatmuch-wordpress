@@ -1,0 +1,36 @@
+.section-text-image {
+    padding: 0 !important;
+
+    &:nth-child(odd) {
+        .row {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .section-title {
+        left: 20%;
+        display: block;
+        position: inherit;
+        text-align: right;
+        width: 350PX;
+    }
+
+    .row {
+        min-height: 50vh;
+        position: relative;
+    }
+
+    .section-text {
+        padding: 0 !important;
+
+        div:not(.text) {
+            padding: 30px 45px;
+        }
+    }
+
+    .section-image {
+        img {
+            max-width: 100%;
+        }
+    }
+}

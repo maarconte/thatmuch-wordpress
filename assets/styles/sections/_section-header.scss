@@ -1,0 +1,12 @@
+.section-header {
+    &-logo {
+        max-width: 500px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    &-description {
+        text-align: center;
+        opacity: .5;
+    }
+}

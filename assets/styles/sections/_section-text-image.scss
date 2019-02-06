@@ -8,16 +8,16 @@
     }
 
     .section-title {
-        left: 20%;
-        display: block;
-        position: inherit;
-        text-align: right;
-        width: 350PX;
-    }
+        position: static;
+        text-align: center;
+        width: inherit;
 
-    .row {
-        min-height: 50vh;
-        position: relative;
+        @include breakpoint(tablet) {
+            display: block;
+            width: 75%;
+            text-align: right;
+            float: right;
+        }
     }
 
     .section-text {
@@ -25,6 +25,24 @@
 
         div:not(.text) {
             padding: 30px 45px;
+        }
+
+        .text {
+            text-align: justify;
+
+            @include breakpoint(tablet) {
+                text-align: left;
+            }
+        }
+
+        .btn {
+            display: block;
+            margin: 0 auto;
+
+            @include breakpoint(tablet) {
+                display: inherit;
+                margin: inherit;
+            }
         }
     }
 

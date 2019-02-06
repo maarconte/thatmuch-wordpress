@@ -12,13 +12,18 @@
  ?>
 
   <section class="section-text-image">
-      <!-- Title -->
-      <?php if(get_sub_field('title') ) : ?>
+  <div class="row">
+      <div class="col-md-6 p-0">
+            <!-- Title -->
+            <?php if(get_sub_field('title') ) : ?>
              <h2 class="section-title"><?php echo get_sub_field('title'); ?></h2>
       <?php endif; ?>
      <!-- Title -->
+      </div>
+  </div>
+
     <div class="row">
-    <div class="col-sm-6 section-text">
+    <div class="col-md-6 section-text">
         <div>
            <!-- Text -->
             <?php if(get_sub_field('text') ) : ?>
@@ -41,7 +46,7 @@
         <!-- Button -->
         </div>
     </div>
-    <div class="col-sm-6 section-image">
+    <div class="col-md-6 section-image">
 <!--         <div class="bg" style="background-image: url(<?php if(get_sub_field('image') ) : $img = get_sub_field('image'); echo $img['url']; endif;?>)"></div>
  -->
  <?php if(get_sub_field('image') ) : $img = get_sub_field('image');?>

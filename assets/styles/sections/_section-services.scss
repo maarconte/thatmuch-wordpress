@@ -1,33 +1,28 @@
 main#sections section.section-services {
-    text-align: center;
+    .service-list-tab {
+        .nav-link {
+            background-color: $color-purple;
+            height: 100%;
 
-    .service {
-        margin-bottom: 2rem;
-
-        &-title {
-            @media screen and (max-width: 767px) {
-                font-size: 30px;
+            &:hover,
+            &.active {
+                background-color: $color-purple-lighter;
+                transform: scale(1.09);
             }
 
-            @media screen and (max-width: 340px) {
-                font-size: 25px;
+            .service-icon {
+                color: #fff;
+                opacity: .5;
+                display: block;
+                text-align: center;
+                font-size: 3rem;
             }
-        }
 
-        &-text {
-            @media screen and (max-width: 767px) {
-                font-size: 15px;
+            .service-title {
+                text-align: center;
+                color: #fff;
+                opacity: .5;
             }
-        }
-
-        &-icon {
-            font-size: 2em;
-        }
-    }
-
-    &.bg-primary {
-        .service-icon {
-            color: $color-primary-darker;
         }
     }
 }

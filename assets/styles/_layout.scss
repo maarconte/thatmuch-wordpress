@@ -23,10 +23,22 @@
 /*==================================================================================
   1.0 GENERAL
 ==================================================================================*/
+// A RANGER
+.container {
+    @include breakpoint(mobile) {
+        max-width: 540px;
+    }
+
+
+    @include breakpoint(tablet) {
+        max-width: 97vw !important;
+    }
+}
 
 main {
     position: relative;
-    margin-top: $header_height;
+
+    // margin-top: $header_height;
 
     article,
     .element {

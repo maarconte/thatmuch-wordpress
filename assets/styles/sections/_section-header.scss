@@ -7,6 +7,9 @@
 
     &-description {
         text-align: center;
-        opacity: .5;
+        opacity: 0.5;
+        font-weight: 300;
+
+        @include heading-size(3);
     }
 }

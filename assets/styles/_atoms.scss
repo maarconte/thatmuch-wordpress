@@ -27,6 +27,29 @@ button, .btn {
     text-transform: uppercase;
     border-radius: 10px;
     padding: .2rem .75rem;
+    transition-duration: .5s;
+}
+
+.btn-primary {
+    background-color: $color-primary;
+    border-color: $color-primary;
+
+    &:hover, &:focus, &:active {
+        box-shadow: inherit !important;
+        background-color: $color-primary-darker !important;
+        border-color: $color-primary-darker !important;
+    }
+}
+
+.btn-secondary {
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+
+    &:hover, &:focus, &:active {
+        box-shadow: inherit !important;
+        background-color: $color-secondary-darker !important;
+        border-color: $color-secondary-darker !important;
+    }
 }
 
 /*==================================================================================

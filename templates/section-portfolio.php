@@ -25,18 +25,14 @@
             );
              $the_query = new WP_Query($args);
             if ($the_query->have_posts() ): ?>
-            <div class="row justify-content-center">
+            <div class="grid">
               <?php while ( $the_query->have_posts() ): $the_query->the_post(); ?>
-                  <div class="col-sm-3">
-                      <!-- Image -->
-                      <a href="<?php the_permalink()?>">
-                        <img src="<?php the_post_thumbnail_url( 'medium' )?>" alt="">
+              <div class="project">
+                  <a  class="d-block" href="<?php the_permalink()?>">
+                      <img  src="<?php the_post_thumbnail_url( 'full' )?>" alt="">
                     </a>
-                      <!-- Image -->
-                      <!-- Title -->
-                          <h5><a href="<?php the_permalink()?>"><?php the_title()?></a></h5>
-                      <!-- Title -->
-                  </div>
+                    <h4 class="project-title"><a href="<?php the_permalink()?>"><?php the_title()?></a></h4>
+              </div>
               <?php $i++; endwhile;?>
             </div>
             <? endif; wp_reset_query();?>

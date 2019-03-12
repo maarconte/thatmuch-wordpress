@@ -67,7 +67,7 @@ body {
     background: $color-gradient;
     color: $html__textcolor !important;
     margin: 0;
-    height: 3000px;
+    height: 6000px;
 
     @include mobile {
         font-size: $body__fontsize_mobile;

@@ -16,12 +16,15 @@
                   <div class="col-md-6">
                         <ul class="nav nav-pills service-list" id="service-tabs" role="tablist">
                               <?php if (have_rows('service') ) : $i =0;?>
+                             <?php  $image = get_sub_field('icon');
+                                    $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size) ?>
                                     <?php while( have_rows('service') ) : the_row(); ?>
                                           <li class="nav-item col service-list-tab">
                                                 <a class="nav-link <?php ($i == 0 ? active : '')?>" id="service-tab-<?= $i ?>-link" data-toggle="tab" data-target="#service-tab-<?= $i ?>" role="tab" aria-controls="service-tab-<?= $i ?>" aria-selected="<?php ($i == 0 ? 'true':'false') ?>">
                                                       <!-- Icon -->
-                                                            <?php if (get_sub_field('icon') ) :?>
-                                                                  <span class="service-icon"><? the_sub_field('icon') ?></span>
+                                                            <?php if ( get_sub_field('icon') ) : $image = get_sub_field('icon'); ?>
+                                                                  <!-- Full size image -->
+                                                                  <img  class="service-icon" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
                                                             <?php endif; ?>
                                                       <!-- Icon -->
                                                       <!-- Icon title -->
@@ -58,10 +61,10 @@
                               <?php if (have_rows('button')) : ?>
                                     <?php while ( have_rows('button') ) : the_row(); ?>
                                           <?php if (get_sub_field('link') == 'Externe' && get_sub_field('label') && get_sub_field('url') ) : ?>
-                                                <a href="<?php the_sub_field('url'); ?>" class="btn btn-primary"><?php the_sub_field('label'); ?></a>
+                                                <a href="<?php the_sub_field('url'); ?>" class="btn btn-primary cta"><?php the_sub_field('label'); ?></a>
                                           <?php endif; ?>
                                           <?php if (get_sub_field('link') == 'Interne' && get_sub_field('label') && get_sub_field('int_url') ) : ?>
-                                                <a href="<?php the_sub_field('int_url'); ?>" class="btn btn-primary">
+                                                <a href="<?php the_sub_field('int_url'); ?>" class="btn btn-primary cta">
                                                       <?php the_sub_field('label'); ?>
                                                 </a>
                                           <?php endif; ?>

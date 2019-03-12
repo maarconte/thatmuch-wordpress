@@ -1,28 +1,87 @@
 main#sections section.section-services {
-    .service-list-tab {
-        .nav-link {
-            background-color: $color-purple;
-            height: 100%;
+    .service-list {
+        margin-bottom: 4rem;
 
-            &:hover,
-            &.active {
-                background-color: $color-purple-lighter;
-                transform: scale(1.09);
+        @include breakpoint(tablet) {
+            margin-bottom: inherit;
+        }
+
+
+        .service-list-tab {
+            height: 180px;
+
+            @include breakpoint(tablet) {
+                height: 150px;
             }
 
-            .service-icon {
-                color: #fff;
-                opacity: .5;
-                display: block;
-                text-align: center;
-                font-size: 3rem;
+
+            @include breakpoint(desktop) {
+                height: 270px;
             }
 
-            .service-title {
-                text-align: center;
-                color: #fff;
-                opacity: .5;
+
+            .nav-link {
+                background-color: $color-purple;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+
+                &:hover,
+                &.active {
+                    background-color: $color-purple-lighter;
+                    transform: scale(1.09);
+                    cursor: pointer;
+
+                    .service-icon {
+                        opacity: .75;
+                    }
+                }
+
+                .service-icon {
+                    opacity: .5;
+                    height: 95px;
+                    width: 100%;
+                }
+
+                .service-title {
+                    margin-top: auto;
+                    text-align: center;
+                    color: #fff;
+                    opacity: .5;
+                }
             }
+        }
+    }
+
+    .section-title {
+        margin-bottom: 2rem;
+        width: 100%;
+        text-align: center;
+
+        @include breakpoint(tablet) {
+            margin-top: -8rem;
+            margin-bottom: 2rem;
+            display: block;
+            width: 25%;
+            text-align: left;
+        }
+    }
+
+    .service-text {
+        @include breakpoint(mobile) {
+            margin-bottom: 4rem;
+            text-align: justify;
+        }
+    }
+
+    .cta {
+        display: block;
+        margin: 0 auto;
+
+        @include breakpoint(tablet) {
+            display: inline-block;
+            margin: initial;
         }
     }
 }

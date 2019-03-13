@@ -11,7 +11,7 @@
  */
  ?>
 
-  <section class="section-contact">
+  <section id="contact" class="section-contact">
     <div class="container">
 <div class="row">
 

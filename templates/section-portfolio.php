@@ -11,7 +11,7 @@
  */
  ?>
 
-  <section class="section-portfolio">
+  <section id="portfolio" class="section-portfolio">
       <div class="container">
           <!-- Title -->
           <?php if(get_sub_field('title') ) : ?>

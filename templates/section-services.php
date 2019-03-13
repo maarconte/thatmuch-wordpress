@@ -10,7 +10,7 @@
  *
  */
  ?>
-<section class="section-services">
+<section id="services" class="section-services">
       <div>
             <div class="row">
                   <div class="col-md-6">

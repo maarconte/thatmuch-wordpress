@@ -64,10 +64,10 @@ body {
     font-size: $body__fontsize;
     font-weight: $body__fontweight;
     line-height: $body__lineheight;
-    background: $color-gradient;
+    background: url(./assets/images/Etoiles.png), $color-gradient;
     color: $html__textcolor !important;
     margin: 0;
-    height: 6000px;
+    height: 5369px;
 
     @include mobile {
         font-size: $body__fontsize_mobile;

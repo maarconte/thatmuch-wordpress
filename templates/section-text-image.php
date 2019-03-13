@@ -11,7 +11,7 @@
  */
  ?>
 
-  <section class="section-text-image">
+  <section id="about" class="section-text-image">
       <div>
           <div class="row">
               <div class="col-md-6 p-0">

@@ -39,6 +39,10 @@ nav.navbar {
     height: $header_height;
     background-color: transparent;
 
+    a {
+        color: #fff;
+    }
+
     .logo  {
         width: 12rem;
         height: 3rem;

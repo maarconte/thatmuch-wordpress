@@ -2,7 +2,7 @@ main#sections {
     section {
         padding: 5rem 3rem 4rem 3rem;
         position: relative;
-        min-height: 100vh;
+        height: 100vh; // Hauteur de l'écran + séparateur de sections
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -20,6 +20,16 @@ main#sections {
             padding: 3rem 0 4rem 0;
         }
 
+        &:not(:last-child):after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            background-color: #fff;
+            width: 3px;
+            height: 48px;
+        }
+
         .container {
             position: relative;
         }
@@ -27,26 +37,12 @@ main#sections {
         .section-title {
             margin-bottom: 1rem;
         }
-
-        .section-background-image {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-            filter: opacity(0.5);
-            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-            filter: alpha(opacity = 50);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-
-            // filter: brightness(0.5);
-       
-        }
     }
+}
+
+.next-section {
+    text-align: center;
+    margin-top: -90px;
 }
 
 @import "section-text";

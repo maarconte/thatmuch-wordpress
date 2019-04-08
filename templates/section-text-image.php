@@ -54,4 +54,5 @@
                 </div>
             </div>
       </div>
+      <?php echo $nextSection ; ?>
  </section>

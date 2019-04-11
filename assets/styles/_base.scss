@@ -47,8 +47,23 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
-body {
+body{
     // used as wrapper for sticky footer
+    font-family: $html__fontname;
+    letter-spacing: 1.7px;
+    font-size: $body__fontsize;
+    font-weight: $body__fontweight;
+    line-height: $body__lineheight;
+    color: $html__textcolor !important;
+    margin: 0;
+
+    @include mobile {
+        font-size: $body__fontsize_mobile;
+    }
+}
+
+.home{
+    height: 5369px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -59,19 +74,8 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    font-family: $html__fontname;
-    letter-spacing: 1.7px;
-    font-size: $body__fontsize;
-    font-weight: $body__fontweight;
-    line-height: $body__lineheight;
-    background: url(./assets/images/Etoiles.png), $color-gradient;
-    color: $html__textcolor !important;
-    margin: 0;
-    height: 5369px;
-
-    @include mobile {
-        font-size: $body__fontsize_mobile;
-    }
+    // background: url(./assets/images/Etoiles.png), $color-gradient;
+    background:$color-gradient;
 }
 
 a {
@@ -162,4 +166,7 @@ table {
     display: block;
     height: $header_height;
     margin-top: -$header_height; // negative top_height
+}
+p{
+    letter-spacing: 1px!important;
 }

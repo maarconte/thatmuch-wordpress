@@ -121,7 +121,7 @@ $args = array(
     "show_ui" => true,
     "show_in_rest" => false,
     "rest_base" => "",
-    "has_archive" => false,
+    "has_archive" => true,
     "show_in_menu" => true,
     "show_in_nav_menus" => true,
     "exclude_from_search" => false,
@@ -131,7 +131,7 @@ $args = array(
     "rewrite" => array( "slug" => "portfolio", "with_front" => true ),
     "query_var" => true,
     "menu_icon" => "dashicons-format-gallery",
-    "supports" => array( "title", "editor", "thumbnail" ),
+    "supports" => array( "title", "thumbnail" ),
 );
 
 register_post_type( "portfolio", $args );

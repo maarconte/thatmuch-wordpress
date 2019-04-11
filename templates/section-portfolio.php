@@ -17,6 +17,11 @@
           <?php if(get_sub_field('title') ) : ?>
               <h2 class="section-title"><?php echo get_sub_field('title'); ?></h2>
           <?php endif; ?>
+
+          <?php if(get_sub_field('slogan_title') ) : ?>
+              <h3 class="slogan-portfolio"><?php echo get_sub_field('slogan_title'); ?></h3>
+          <?php endif; ?>
+
           <!-- Title -->
           <!-- Portfolio -->
           <?php

@@ -20,7 +20,7 @@
     <? wp_head(); ?>
   </head>
 
-  <body>
+  <body <?php body_class(); ?>>
     <? stanlee_gtm('body') ?>
 
      <? $custom_logo_id = get_theme_mod( 'custom_logo' );
@@ -52,11 +52,24 @@
     </div>
   </div>
 </nav>
+<script>
+  $(function() {
+    var header = $(".navbar");
+  
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll >= 50) {
+            header.addClass("navbar-scroll");
+        } else {
+            header.removeClass("navbar-scroll");
+        }
+    });
+  });
+</script>
 <?php if ( is_home()): ?>
             <header>
                 <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
             </header>
 <?php endif; ?>
     <div id="content" class="site-content">
-      <div class="container">
 

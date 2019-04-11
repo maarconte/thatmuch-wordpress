@@ -39,6 +39,8 @@ nav.navbar {
     height: $header_height;
     background-color: transparent;
 
+
+
     a {
         color: #fff;
     }
@@ -66,4 +68,8 @@ nav.navbar {
             color: #fff;
         }
     }
+}
+
+.navbar-scroll{
+  background-color:#0a0621!important;
 }

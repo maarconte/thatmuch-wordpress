@@ -6,7 +6,6 @@
  */
 ?>
 
-        </div><!-- #container -->
 	</div><!-- #content -->
     <footer class="footer">
       <div class="container">

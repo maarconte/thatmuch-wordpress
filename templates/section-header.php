@@ -15,7 +15,7 @@
         $image = wp_get_attachment_image_src( $custom_logo_id , 'full' ); ?>
 
  <section class="section-header">
-     <div>
+     <div class="home-info">
          <img class="section-header-logo" src="<?php echo $image[0]?>" alt="that_much">
          <h2 class="section-header-description"><?php echo get_bloginfo( 'description' ); ?></h2>
                  <!-- Button -->

@@ -38,7 +38,7 @@
                               <? endif;?>
                         </ul>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 services_info">
                         <!-- Title -->
                               <?php if(get_sub_field('title') ) : ?>
                                     <h2 class="section-title"><?php echo get_sub_field('title'); ?></h2>
@@ -49,6 +49,11 @@
                               <?php while( have_rows('service') ) : the_row(); ?>
                                     <div class="tab-pane fade service <?php if($i == 0) {echo 'show active';} ?>" id="service-tab-<?= $i ?>" role="tabpanel" aria-labelledby="service-tab-<?= $i ?>-link">
                                           <!-- Texte -->
+                                          <?php if( get_sub_field('slogan_service') ) : ?>
+                                                <h3 class="slogan_services"><?php echo get_sub_field('slogan_service'); ?></h3>
+                                          <?php endif; ?>
+                                          
+                                                
                                                 <?php if(get_sub_field('text') ) : ?>
                                                       <p class="service-text"> <?php echo get_sub_field('text'); ?></p>
                                                 <?php endif; ?>

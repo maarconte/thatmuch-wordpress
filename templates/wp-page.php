@@ -7,10 +7,8 @@
 ?>
 
 <? get_header(); ?>
-<div class="container">
 
 <main id="page">
-
   <? if (has_post_thumbnail()) : ?>
     <section>
       <div class="element teaser">
@@ -27,9 +25,6 @@
       </article>
     <? endwhile; ?>
   </section>
-
 </main>
-</div>
-
 
 <? get_footer(); ?>

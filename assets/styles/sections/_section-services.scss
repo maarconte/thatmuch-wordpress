@@ -26,10 +26,12 @@ main#sections section.section-services {
                 display: flex;
                 flex-direction: column;
                 padding: 2rem;
+                box-shadow: 0 6px 23px rgba(0,0,0,.32);
 
                 &:hover,
                 &.active {
                     background-color: $color-purple-lighter;
+                    box-shadow: inherit;
                     transform: scale(1.09);
                     cursor: pointer;
 
@@ -40,7 +42,7 @@ main#sections section.section-services {
 
                 .service-icon {
                     opacity: .5;
-                    height: 95px;
+                    // height: 95px;
                     width: 100%;
                 }
 
@@ -68,7 +70,17 @@ main#sections section.section-services {
         }
     }
 
+    .slogan_services{
+      margin-top: 5rem!important;
+      text-transform: none;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+
     .service-text {
+        margin-bottom: 2rem;
+
         @include breakpoint(mobile) {
             margin-bottom: 4rem;
             text-align: justify;

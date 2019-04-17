@@ -1207,7 +1207,7 @@ acf_add_local_field_group(array(
 									'key' => 'field_5ba4ae6586491',
 									'label' => 'Texte',
 									'name' => 'text',
-									'type' => 'textarea',
+									'type' => 'wysiwyg',
 									'required' => 0,
 									'conditional_logic' => 0,
 									'wrapper' => array(

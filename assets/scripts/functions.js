@@ -3,7 +3,7 @@
  *
  * @author      That Much
  * @version     0.1.0
- * @since       _s 0.1.0.0
+ * @since       That Much 0.1.0.0
  *
  */
 

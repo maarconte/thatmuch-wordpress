@@ -68,7 +68,7 @@
     <div class="credits">
       <div class="container">
       <div class="inner">
-      Un site crée par <a href="https://thatmuch.fr" target="_blank" rel="noopener noreferrer"><strong>_a</strong></a>
+      Un site crée par <a href="https://thatmuch.fr" target="_blank" rel="noopener noreferrer"><strong>That Much</strong></a>
       </div>
       </div>
     </div>

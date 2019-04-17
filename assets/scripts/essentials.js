@@ -27,7 +27,7 @@ if (isTouch) {
 }
 
 
-/* Debouncer
+/* Debouncer //
 /––––––––––––––––––––––––*/
 // prevents functions to execute to often/fast
 // Usage:

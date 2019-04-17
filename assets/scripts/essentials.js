@@ -1,7 +1,7 @@
 /*!
  * Essential javascript functions/variables
  *
- * @author      _a
+ * @author      That Much
  * @version     0.1.0
  * @since       _s 0.1.0.0
  *

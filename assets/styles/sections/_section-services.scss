@@ -123,16 +123,19 @@ main#sections section.section-services {
       text-align: center;
       margin-top :5rem;
     }
-    .nav-item{
-        max-width: 100%;
-        -ms-flex-preferred-size: inherit!important;
-        flex-basis: inherit!important;
-        -webkit-box-flex: inherit!important;
-        -ms-flex-positive: inherit!important;
-        flex-grow: inherit!important;
-        margin-bottom: 3rem;
-    }
 
+}
+
+@media screen and (max-width: 750px){
+.nav-item{
+    max-width: 100%;
+    -ms-flex-preferred-size: inherit!important;
+    flex-basis: inherit!important;
+    -webkit-box-flex: inherit!important;
+    -ms-flex-positive: inherit!important;
+    flex-grow: inherit!important;
+    margin-bottom: 3rem;
+}
 }
 
 .decors-layer100{

@@ -247,18 +247,37 @@ main#subsites {
     .inner {
         padding: 1.5rem 0;
         font-size: 0.8rem;
+        display: flex;
     }
 
     .credits {
         background-color: transparent;
         color: #fff;
-        text-align: center;
 
-        a {
+        .theme_logo {
             color: #fff;
+            margin-left: auto;
 
             img {
                 width: 100px;
+            }
+        }
+
+        .widget_nav_menu {
+            width: inherit;
+            flex-grow: inherit;
+            flex-basis: inherit;
+
+            .menu {
+                flex-direction: inherit !important;
+
+                li {
+                    display: inline-block;
+
+                    &:not(:last-child) {
+                        margin-right: 1rem;
+                    }
+                }
             }
         }
     }

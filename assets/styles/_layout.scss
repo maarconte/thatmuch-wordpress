@@ -28,11 +28,6 @@
     @include breakpoint(mobile) {
         max-width: 540px;
     }
-
-
-    @include breakpoint(tablet) {
-        max-width: 97vw !important;
-    }
 }
 
 main {

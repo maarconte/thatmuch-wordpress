@@ -2496,6 +2496,8 @@ acf_add_local_field_group(array(
 	'active' => 1,
 	'description' => '',
 ));
+
+
 acf_add_local_field_group(array(
 		'key' => 'group_5cac993bc4c63',
 		'title' => 'Informations du projet',
@@ -2582,5 +2584,5 @@ acf_add_local_field_group(array(
 		'active' => 1,
 		'description' => '',
 	));
-	
+
 	endif;

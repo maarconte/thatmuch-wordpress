@@ -10,9 +10,6 @@
     <footer class="footer">
       <div class="container">
         <div class="row inner">
-       <? if(is_active_sidebar('footer-1')){
-      dynamic_sidebar('footer-1');
-        } ?>
         <?php if (have_rows('rs', 'options')) : ?>
         <div class="col-sm-3">
       <ul class="footer-rs">
@@ -68,7 +65,13 @@
     <div class="credits">
       <div class="container">
       <div class="inner">
-      Un site crée par <a href="https://_a.fr" target="_blank" rel="noopener noreferrer"><strong>_a</strong></a>
+      <? if(is_active_sidebar('footer-1')){
+      dynamic_sidebar('footer-1');
+        } ?>
+     <a href="https://thatmuch.fr" target="_blank" rel="noopener noreferrer" class="theme_logo">
+        <img src="<?php echo get_template_directory_uri()?>/assets/images/logo-thatmuch-B.png" alt="That Much">
+    </a>
+
       </div>
       </div>
     </div>

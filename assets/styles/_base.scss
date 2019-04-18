@@ -47,7 +47,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
-body{
+body {
     // used as wrapper for sticky footer
     font-family: $html__fontname;
     letter-spacing: 1.7px;
@@ -62,8 +62,22 @@ body{
     }
 }
 
+<<<<<<< HEAD
 .home{
     // height: 5369px;
+=======
+body.page:not(.home) {
+    background: url(./assets/images/Etoiles.png), $color-gradient;
+    background-repeat: no-repeat;
+
+    .site-content {
+        margin-top: 77px;
+    }
+}
+
+.home {
+    height: 5369px;
+>>>>>>> 8ae6895c4d286b8069ef28879433019d2ea1f9a2
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -74,8 +88,9 @@ body{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
     // background: url(./assets/images/Etoiles.png), $color-gradient;
-    background:$color-gradient;
+    background: $color-gradient;
 }
 
 a {
@@ -87,6 +102,7 @@ a {
 
     &:hover {
         color: $a__hovercolor;
+        text-decoration: $a__textdecoration;
     }
 }
 
@@ -104,6 +120,7 @@ header {
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     letter-spacing: 4px;
+    font-family: $html__fontname;
 }
 
 h1 {
@@ -167,6 +184,7 @@ table {
     height: $header_height;
     margin-top: -$header_height; // negative top_height
 }
-p{
-    letter-spacing: 1px!important;
+
+p {
+    letter-spacing: 1px !important;
 }

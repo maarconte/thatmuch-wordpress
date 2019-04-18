@@ -33,10 +33,10 @@
             <div class="grid">
               <?php while ( $the_query->have_posts() ): $the_query->the_post(); ?>
               <div class="project">
-                  <a  class="d-block" href="<?php the_permalink()?>">
+                  <a  class="d-block h-100 w-100" href="<?php the_permalink()?>">
                       <img  src="<?php the_post_thumbnail_url( 'full' )?>" alt="">
                     </a>
-                    <h4 class="project-title"><a href="<?php the_permalink()?>"><?php the_title()?></a></h4>
+                    <h5 class="project-title"><a href="<?php the_permalink()?>"><?php the_title()?></a></h5>
               </div>
               <?php $i++; endwhile;?>
             </div>

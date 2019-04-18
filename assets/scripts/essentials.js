@@ -1,9 +1,9 @@
 /*!
  * Essential javascript functions/variables
  *
- * @author      _a
+ * @author      That Much
  * @version     0.1.0
- * @since       _s 0.1.0.0
+ * @since       That Much 0.1.0.0
  *
  */
 
@@ -27,7 +27,7 @@ if (isTouch) {
 }
 
 
-/* Debouncer
+/* Debouncer //
 /––––––––––––––––––––––––*/
 // prevents functions to execute to often/fast
 // Usage:

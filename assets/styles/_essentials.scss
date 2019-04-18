@@ -146,5 +146,5 @@ $amplifier-heading: 1.5;
 
 /* The mixin */
 @mixin heading-size($size) {
-    font-size: $size * $step-size-heading * $amplifier-heading + rem;
+    font-size: ($size * $step-size-heading * $amplifier-heading + rem) !important;
 }

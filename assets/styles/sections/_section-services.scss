@@ -47,6 +47,12 @@ main#sections section.section-services {
                     opacity: .5;
                     // height: 95px;
                     width: 100%;
+
+                    @media screen and (max-width: 900px){
+                        display: block;
+                        width: 50%;
+                        margin: 0 auto 3rem;
+                    }
                 }
 
                 .service-title {
@@ -70,6 +76,10 @@ main#sections section.section-services {
             display: block;
             width: 25%;
             text-align: left;
+        }
+        @media screen and (max-width: 900px){
+            margin-top: 0!important;
+            text-align: center;
         }
     }
 
@@ -107,6 +117,12 @@ main#sections section.section-services {
         -ms-flex: 0 0 100%!important;
         flex: 0 0 100%!important;
     }
+    .services_info{
+      text-align: center;
+      margin-top :5rem;
+    }
+
+
 }
 
 .decors-layer100{

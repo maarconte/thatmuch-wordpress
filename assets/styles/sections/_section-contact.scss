@@ -71,3 +71,11 @@
         }
     }
 }
+@media screen and (max-width: 900px){
+    .contact-form,.devis-gratuit{
+        max-width: 100%!important;
+        -webkit-box-flex: 0!important;
+        -ms-flex: 0 0 100%!important;
+        flex: 0 0 100%!important;
+    }
+}

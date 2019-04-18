@@ -123,11 +123,11 @@ main#sections section.section-services {
     }
     .nav-item{
         max-width: 100%;
-        -ms-flex-preferred-size: inherit;
-        flex-basis: inherit;
-        -webkit-box-flex: inherit;
-        -ms-flex-positive: inherit;
-        flex-grow: inherit; 
+        -ms-flex-preferred-size: inherit!important;
+        flex-basis: inherit!important;
+        -webkit-box-flex: inherit!important;
+        -ms-flex-positive: inherit!important;
+        flex-grow: inherit!important;
         margin-bottom: 3rem;
     }
 

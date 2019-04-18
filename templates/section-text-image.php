@@ -13,7 +13,7 @@
 
   <section id="about" class="section-text-image">
   <div class="parallax">
-    <div class="decors decors-layer4" style="background-image: url();"></div>
+    <div data-offset="25" class="decors decors-layer4" style="background-image: url(<?php echo site_url(); ?>/wp-content/themes/thatmuch-wordpress/assets/images/fond-points-3.png);"></div>
     <div data-offset="35" class="decors decors-layer30" style="background-image: url(<?php echo site_url(); ?>/wwp-content/themes/thatmuch-wordpress/assets/images/planete.png);"></div>
     <div data-offset="20" class="decors decors-layer10" style="background-image: url(<?php echo site_url(); ?>/wp-content/themes/thatmuch-wordpress/assets/images/nuage.png);"></div>
 </div>

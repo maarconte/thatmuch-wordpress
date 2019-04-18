@@ -18,6 +18,9 @@ main#sections section.section-services {
             @include breakpoint(desktop) {
                 height: 270px;
             }
+            @media screen and (max-width: 900px){
+                height: inherit;
+            }
 
 
             .nav-link {

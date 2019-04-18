@@ -12,6 +12,11 @@
  ?>
 
   <section id="about" class="section-text-image">
+  <div class="parallax">
+    <div class="water water-layer4"></div>
+    <div class="water water-layer30"></div>
+    <div class="water water-layer10"></div>
+</div>
       <div>
           <div class="row">
               <div class="col-md-6 p-0">

@@ -11,6 +11,11 @@
  */
  ?>
 <section id="services" class="section-services">
+<div class="parallax">
+    <div class="water water-layer4"></div>
+    <div class="water water-layer300"></div>
+    <div class="water water-layer100"></div>
+</div>
       <div>
             <div class="row">
                   <div class="col-md-6">

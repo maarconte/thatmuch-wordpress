@@ -29,7 +29,7 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container">
   <a class="navbar-brand" href="<?php echo site_url(); ?>">
-    <div class="logo" style="background-image: url('<? if($image[0]): echo $image[0]; else: echo get_template_directory_uri()?>/assets/images/stanlee_logo_texte.png<?endif; ?>')"></div>
+    <div class="logo logo-menu" style="background-image: url('<? if($image[0]): echo $image[0]; else: echo get_template_directory_uri()?>/assets/images/stanlee_logo_texte.png<?endif; ?>')"></div>
   </a>
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="<?php esc_html_e( 'Toggle Navigation', 'theme-textdomain' ); ?>">
         <span class="navbar-toggler-icon"></span>
@@ -55,7 +55,6 @@
 <script>
   $(function() {
     var header = $(".navbar");
-  
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
         if (scroll >= 50) {

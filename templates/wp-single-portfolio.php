@@ -48,6 +48,9 @@
               <?php endif; ?> 
     </div>
     <div class="info_projet">
+      <div class="block-file-ariane">
+        <a href="<?php echo site_url(); ?>">Accueil</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="<?php echo site_url(); ?>/#portfolio">Porfolio</a>&nbsp;&nbsp;>&nbsp;&nbsp;<p><?php the_title(); ?></p>
+      </div>
       <h2 class="title-projet"><?php the_title(); ?></h2>
       <div class="title-line"></div>
       <?php if( get_field('projet') ): ?> 

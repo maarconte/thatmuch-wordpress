@@ -14,7 +14,16 @@
 <? $custom_logo_id = get_theme_mod( 'custom_logo' );
         $image = wp_get_attachment_image_src( $custom_logo_id , 'full' ); ?>
 
+
+
+<!-- <img src='http://thatmuch.local/wp-content/uploads/2019/04/Tatooin.png'> -->
  <section class="section-header">
+ <div class="parallax">
+    <div class="water water-layer4"></div>
+    <div class="water water-layer3"></div>
+    <div class="water water-layer2"></div>
+    <div class="water water-layer1"></div>
+</div>
      <div class="home-info">
          <img class="section-header-logo" src="<?php echo $image[0]?>" alt="that_much">
          <h2 class="section-header-description"><?php echo get_bloginfo( 'description' ); ?></h2>
@@ -49,3 +58,25 @@
 
      </div>
  </section>
+
+<script>
+     var currentX = '';
+var currentY = '';
+var movementConstant = .008;
+$(document).mousemove(function(e) {
+  if(currentX == '') currentX = e.pageX;
+  var xdiff = e.pageX - currentX;
+  currentX = e.pageX;
+   if(currentY == '') currentY = e.pageY;
+  var ydiff = e.pageY - currentY;
+  currentY = e.pageY; 
+  $('.parallax div').each(function(i, el) {
+      var movement = (i + 1) * (xdiff * movementConstant);
+	  var movementy = (i + 1) * (ydiff * movementConstant);
+      var newX = $(el).position().left + movement;
+	  var newY = $(el).position().top + movementy;
+      $(el).css('left', newX + 'px');
+	  $(el).css('top', newY + 'px');
+  });
+});
+</script>

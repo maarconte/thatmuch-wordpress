@@ -65,6 +65,10 @@ body {
 body.page {
     background: url(./assets/images/Etoiles.png), $color-gradient;
     background-repeat: no-repeat;
+
+    .site-content {
+        margin-top: 77px;
+    }
 }
 
 .home {
@@ -93,6 +97,7 @@ a {
 
     &:hover {
         color: $a__hovercolor;
+        text-decoration: $a__textdecoration;
     }
 }
 

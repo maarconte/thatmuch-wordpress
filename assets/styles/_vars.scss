@@ -66,15 +66,15 @@ $body__lineheight: 1.5;
 
 /* NAV
 /––––––––––––––––––––––––*/
-$nav__linkcolor: $color-dark;
-$nav__hovercolor: $color-primary;
+$nav__linkcolor: #fff;
+$nav__hovercolor: $color-grey;
 $nav__activecolor: $color-primary;
 $nav__spacercolor: $color-dark;
 
 /* ANCHORS
 /––––––––––––––––––––––––*/
-$a__linkcolor: $color-dark;
-$a__hovercolor: $color-dark;
+$a__linkcolor: $color-secondary;
+$a__hovercolor: $color-secondary-darker;
 $a__textdecoration: "none";
 
 /*==================================================================================

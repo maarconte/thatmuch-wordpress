@@ -39,10 +39,12 @@ nav.navbar {
     height: $header_height;
     background-color: transparent;
 
-
-
     a {
-        color: #fff;
+        color: $nav__linkcolor;
+
+        &:hover {
+            color: $nav__hovercolor;
+        }
     }
 
     .logo  {
@@ -65,11 +67,11 @@ nav.navbar {
         padding: 15px;
 
         a {
-            color: #fff;
+            color: $nav__linkcolor;
         }
     }
 }
 
-.navbar-scroll{
-  background-color:#0a0621!important;
+.navbar-scroll {
+    background-color: rgba($color: #0a0621, $alpha: 0.8) !important;
 }

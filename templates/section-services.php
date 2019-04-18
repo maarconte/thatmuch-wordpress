@@ -17,7 +17,7 @@
 </div>
       <div>
             <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-6 nav-service">
                         <ul class="nav nav-pills service-list" id="service-tabs" role="tablist">
                               <?php if (have_rows('service') ) : $i =0;?>
                              <?php  $image = get_sub_field('icon');

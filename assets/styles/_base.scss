@@ -62,7 +62,11 @@ body {
     }
 }
 
-.home{
+body.page-template-default {
+    background: url(./assets/images/Etoiles.png), $color-gradient;
+}
+
+.home {
     // height: 5369px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -74,8 +78,6 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-
-    // background: url(./assets/images/Etoiles.png), $color-gradient;
     background: $color-gradient;
 }
 

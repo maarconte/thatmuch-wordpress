@@ -99,39 +99,15 @@ main#sections section.section-services {
 }
 
 
-
-.parallax {
-    position: absolute;
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
-    left: 0;
-    top: 0;
-}
-.water {
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: top center;
-}
-.water-layer100{
-    background-image: url(http://thatmuch.local/wp-content/uploads/2019/04/nuage2.png);
+.decors-layer100{
     right:-2.5rem;
     top: 5rem;
     position: absolute;
     width: 500px;
     height: 800px;
 }
-
-// .water-layer300 {
-//     background-image: url(http://thatmuch.local/wp-content/uploads/2019/04/planete.png);
-//     width: 100px;
-//     height: 100px;
-//     top: 12rem;
-//     right: 9rem;
-// }
-.water-layer4 {
-    background-image: url(./assets/images/Etoiles.png);
+.decors-layer4 {
+    // background-image: url(./assets/images/Etoiles.png);
     width: 100%;
-    height: 5369px;
     
 }

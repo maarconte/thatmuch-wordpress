@@ -12,9 +12,8 @@
  ?>
 <section id="services" class="section-services">
 <div class="parallax">
-    <div class="water water-layer4"></div>
-    <div class="water water-layer300"></div>
-    <div class="water water-layer100"></div>
+    <div class="decors decors-layer4"></div>
+    <div data-offset="20" class="decors decors-layer100" style="background-image: url(<?php echo site_url(); ?>/wp-content/themes/thatmuch-wordpress/assets/images/nuage2.png);"></div>
 </div>
       <div>
             <div class="row">

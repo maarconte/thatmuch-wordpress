@@ -13,9 +13,9 @@
 
   <section id="about" class="section-text-image">
   <div class="parallax">
-    <div class="water water-layer4"></div>
-    <div class="water water-layer30"></div>
-    <div class="water water-layer10"></div>
+    <div class="decors decors-layer4" style="background-image: url();"></div>
+    <div data-offset="35" class="decors decors-layer30" style="background-image: url(<?php echo site_url(); ?>/wwp-content/themes/thatmuch-wordpress/assets/images/planete.png);"></div>
+    <div data-offset="20" class="decors decors-layer10" style="background-image: url(<?php echo site_url(); ?>/wp-content/themes/thatmuch-wordpress/assets/images/nuage.png);"></div>
 </div>
       <div>
           <div class="row">

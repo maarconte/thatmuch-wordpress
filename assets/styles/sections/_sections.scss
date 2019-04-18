@@ -60,3 +60,22 @@ main#sections {
 @import "section-carousel";
 @import "section-teams";
 @import "section-header";
+
+
+.parallax {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+
+    @media screen and (max-width: 890px) {
+      display: none;
+    }
+}
+.decors{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: top center;
+}

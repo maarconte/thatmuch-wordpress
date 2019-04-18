@@ -19,10 +19,10 @@
 <!-- <img src='http://thatmuch.local/wp-content/uploads/2019/04/Tatooin.png'> -->
  <section class="section-header">
  <div class="parallax">
-    <div class="water water-layer4"></div>
-    <div class="water water-layer3"></div>
-    <div class="water water-layer2"></div>
-    <div class="water water-layer1"></div>
+    <div data-offset="90" class="decors decors-layer4" style="background-image: url(./assets/images/Etoiles.png);"></div>
+    <div data-offset="30" class="decors decors-layer3" style="background-image: url(<?php echo site_url(); ?>/wp-content/themes/thatmuch-wordpress/assets/images/planete.png);"></div>
+    <div data-offset="10" class="decors decors-layer2" style="background-image: url(<?php echo site_url(); ?>/wp-content/themes/thatmuch-wordpress/assets/images/Saturne.png);"></div>
+    <div data-offset="33" class="decors decors-layer1" style="background-image: url(<?php echo site_url(); ?>/wp-content/themes/thatmuch-wordpress/assets/images/Tatooin.png);"></div>
 </div>
      <div class="home-info">
          <img class="section-header-logo" src="<?php echo $image[0]?>" alt="that_much">
@@ -59,7 +59,7 @@
      </div>
  </section>
 
-<script>
+<!-- <script>
      var currentX = '';
 var currentY = '';
 var movementConstant = .008;
@@ -79,4 +79,26 @@ $(document).mousemove(function(e) {
 	  $(el).css('top', newY + 'px');
   });
 });
+</script> -->
+
+<script>
+    $(window).on('mousemove', function(e){
+  var w = $(window).width();
+  var h = $(window).height();
+  
+  var offsetX = 0.5 - e.pageX / w;
+  var offsetY = 0.5 - e.pageY / h;
+    
+  $('.decors').each(function(i, el){
+    var offset = parseInt($(el).data('offset'));
+    
+    var translate = "translate3d("+ Math.round(offsetX * offset) + "px," + Math.round(offsetY * offset) + "px, 0px";
+    
+    
+    $(el).css({
+      'transform':translate
+    })
+  })
+})
+
 </script>

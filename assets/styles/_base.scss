@@ -62,7 +62,7 @@ body {
     }
 }
 
-body.page {
+body.page:not(.home) {
     background: url(./assets/images/Etoiles.png), $color-gradient;
     background-repeat: no-repeat;
 

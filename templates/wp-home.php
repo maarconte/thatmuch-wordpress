@@ -10,6 +10,10 @@
 ?>
 
 <? get_header(); ?>
+<div class="parallax">
+    <div data-offset="35" class="decors decors-layer5" style="background-image: url(<?php echo site_url(); ?>/wp-content/themes/thatmuch-wordpress/assets/images/fond-points-2.png);"></div>
+    <div data-offset="21" class="decors decors-layer4" style="background-image: url(<?php echo site_url(); ?>/wp-content/themes/thatmuch-wordpress/assets/images/fond-etoile-1.png);"></div>
+</div>
 <div class="container">
   <div class="row">
   <main id="blog" class="content-area col-sm-12 col-lg-8">

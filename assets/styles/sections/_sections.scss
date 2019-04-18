@@ -29,6 +29,10 @@ main#sections {
             background-color: #fff;
             width: 3px;
             height: 48px;
+            
+            @media screen and (max-width: 900px) {
+                display: none;
+            }
         }
 
         .container {

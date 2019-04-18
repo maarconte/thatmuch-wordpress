@@ -81,7 +81,8 @@ main#sections section.section-services {
         }
         @media screen and (max-width: 900px){
             margin-top: 0!important;
-            text-align: center;
+            text-align: center!important;
+            width: 100%;
         }
     }
 

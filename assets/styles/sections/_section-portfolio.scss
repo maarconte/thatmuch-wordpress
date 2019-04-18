@@ -1,4 +1,7 @@
 .section-portfolio {
+    .container{
+        max-width: 100%;
+    }
     .grid {
         display: grid;
         grid-gap: 5px;

@@ -1,5 +1,4 @@
 <? if( function_exists('acf_add_local_field_group') ):
-
 /* Temoignages */
 acf_add_local_field_group(array(
 	'key' => 'group_5ba67078385a0',
@@ -2583,5 +2582,4 @@ acf_add_local_field_group(array(
 	'active' => 1,
 	'description' => '',
 ));
-
 endif;

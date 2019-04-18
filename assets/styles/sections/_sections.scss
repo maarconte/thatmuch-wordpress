@@ -2,7 +2,7 @@ main#sections {
     section {
         padding: 5rem 3rem 4rem 3rem!important;
         position: relative;
-        height: 100vh; // Hauteur de l'écran + séparateur de sections
+        min-height: 100vh; // Hauteur de l'écran + séparateur de sections
         display: flex;
         flex-direction: column;
         align-items: center;

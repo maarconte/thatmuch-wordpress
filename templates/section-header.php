@@ -20,7 +20,7 @@
  <section class="section-header">
  <div class="parallax">
     <div data-offset="35" class="decors decors-layer5" style="background-image: url(<?php echo site_url(); ?>/wp-content/themes/thatmuch-wordpress/assets/images/fond-points-2.png);"></div>
-    <div data-offset="20" class="decors decors-layer4" style="background-image: url(<?php echo site_url(); ?>/wp-content/themes/thatmuch-wordpress/assets/images/fond-etoile-1.png);"></div>
+    <div data-offset="21" class="decors decors-layer4" style="background-image: url(<?php echo site_url(); ?>/wp-content/themes/thatmuch-wordpress/assets/images/fond-etoile-1.png);"></div>
     <div data-offset="30" class="decors decors-layer3" style="background-image: url(<?php echo site_url(); ?>/wp-content/themes/thatmuch-wordpress/assets/images/planete.png);"></div>
     <div data-offset="10" class="decors decors-layer2" style="background-image: url(<?php echo site_url(); ?>/wp-content/themes/thatmuch-wordpress/assets/images/Saturne.png);"></div>
     <div data-offset="33" class="decors decors-layer1" style="background-image: url(<?php echo site_url(); ?>/wp-content/themes/thatmuch-wordpress/assets/images/Tatooin.png);"></div>

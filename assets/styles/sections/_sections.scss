@@ -14,7 +14,7 @@ main#sections {
 
         @media screen and (max-width: 530px) {
             padding: 5rem 0 4rem 0;
-            height: inherit!important;
+            min-height: inherit!important;
         }
 
         @media screen and (max-width: 430px) {
@@ -29,7 +29,7 @@ main#sections {
             background-color: #fff;
             width: 3px;
             height: 48px;
-            
+
             @media screen and (max-width: 900px) {
                 display: none;
             }

@@ -5,7 +5,9 @@ main#sections section.section-services {
         @include breakpoint(tablet) {
             margin-bottom: inherit;
         }
-
+        @media screen and (max-width: 900px){
+            margin-bottom: 0;
+        }
 
         .service-list-tab {
             height: 180px;

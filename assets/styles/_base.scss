@@ -62,6 +62,11 @@ body {
     }
 }
 
+body.page {
+    background: url(./assets/images/Etoiles.png), $color-gradient;
+    background-repeat: no-repeat;
+}
+
 .home {
     height: 5369px;
     display: -webkit-box;

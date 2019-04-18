@@ -9,22 +9,24 @@
 <? get_header(); ?>
 
 <main id="page">
-  <? if (has_post_thumbnail()) : ?>
-    <section>
-      <div class="element teaser">
-        <? the_post_thumbnail('large', ['class' => 'modernizr-of']); ?>
-      </div>
-    </section>
-  <? endif?>
+  <div class="container">
+    <? if (has_post_thumbnail()) : ?>
+      <section>
+        <div class="element teaser">
+          <? the_post_thumbnail('large', ['class' => 'modernizr-of']); ?>
+        </div>
+      </section>
+    <? endif?>
 
-  <section>
-    <? while (have_posts()) : the_post(); ?>
-      <article>
-        <h1><? the_title(); ?></h1>
-        <? the_content(); ?>
-      </article>
-    <? endwhile; ?>
-  </section>
+    <section>
+      <? while (have_posts()) : the_post(); ?>
+        <article>
+          <h1><? the_title(); ?></h1>
+          <? the_content(); ?>
+        </article>
+      <? endwhile; ?>
+    </section>
+  </div>
 </main>
 
 <? get_footer(); ?>

@@ -62,22 +62,8 @@ body {
     }
 }
 
-<<<<<<< HEAD
 .home{
     // height: 5369px;
-=======
-body.page:not(.home) {
-    background: url(./assets/images/Etoiles.png), $color-gradient;
-    background-repeat: no-repeat;
-
-    .site-content {
-        margin-top: 77px;
-    }
-}
-
-.home {
-    height: 5369px;
->>>>>>> 8ae6895c4d286b8069ef28879433019d2ea1f9a2
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

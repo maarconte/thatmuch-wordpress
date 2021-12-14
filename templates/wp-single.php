@@ -27,7 +27,7 @@
 </section>
 
 </main>
-<? get_sidebar();?>
+<? //get_sidebar();?>
   </div>
 </div>
 

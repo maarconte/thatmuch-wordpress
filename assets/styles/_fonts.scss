@@ -8,4 +8,16 @@
  * @since       undefined 0.1.0.0
  *
  */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Raleway&display=swap");
+
+@font-face {
+    font-family: 'TourneyBlack';
+    src: url("./assets/fonts/TourneyBlack.eot");
+    src: url("./assets/fonts/TourneyBlack.eot") format("embedded-opentype"), url("./assets/fonts/TourneyBlack.woff2") format("woff2"), url("./assets/fonts/TourneyBlack.woff") format("woff"), url("./assets/fonts/TourneyBlack.ttf") format("truetype"), url("./assets/fonts/TourneyBlack.svg#TourneyBlack") format("svg");
+}
+
+@font-face {
+    font-family: 'OperatorMonoBook';
+    src: url("./assets/fonts/OperatorMonoBook.eot");
+    src: url("./assets/fonts/OperatorMonoBook.eot") format("embedded-opentype"), url("./assets/fonts/OperatorMonoBook.woff2") format("woff2"), url("./assets/fonts/OperatorMonoBook.woff") format("woff"), url("./assets/fonts/OperatorMonoBook.ttf") format("truetype"), url("./assets/fonts/OperatorMonoBook.svg#OperatorMonoBook") format("svg");
+}

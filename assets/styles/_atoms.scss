@@ -23,12 +23,18 @@ Table of Contents:
   1.0 Buttons
 ==================================================================================*/
 button, .btn {
-    // width: 295px;
-    width: 40%;
-    text-transform: uppercase;
-    border-radius: 10px;
-    padding: .2rem .75rem;
+    border-radius: 8px;
+    padding: .75rem;
     transition-duration: .5s;
+    width: 216px;
+
+    /* Button Label */
+    font-family: 'Operator Mono';
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .btn-primary {

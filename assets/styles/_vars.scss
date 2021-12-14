@@ -14,7 +14,7 @@
   SCALING
 ==================================================================================*/
 
-$base_size: 1vw; // scales all `rem` based elements by adding this value as html font-size
+$base_size: 18px; // scales all `rem` based elements by adding this value as html font-size
 $breakpoint: 768px; // breakpoint between @desktop and @mobile mixins
 $scaling_endpoint: 1200px; // scaling of all `rem` based elements stops here
 $base_size_mobile: $base_size * 2.2; // scaling multiplicator for mobile viewport
@@ -32,8 +32,8 @@ $element_width_mobile: 95vw; // default width of the .element content-div
 
 /* Presets
 /––––––––––––––––––––––––*/
-$color-primary: #DF6A55;
-$color-primary-darker: #C14F51;
+$color-primary: #0fc7d2;
+$color-primary-darker: #fdc500;
 $color-secondary: #FFBC74;
 $color-secondary-darker: #F29B6D;
 $color-purple: #241848;
@@ -54,7 +54,7 @@ $color-gradient: linear-gradient(0deg, #6B508A 0%, #48376D 16%, #241848 44%, #1B
 
 /* HTML
 /––––––––––––––––––––––––*/
-$html__fontname: "Montserrat";
+$html__fontname: "OperatorMonoBook";
 $html__textcolor: $color-purple;
 
 /* BODY

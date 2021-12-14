@@ -84,7 +84,6 @@ footer .inner {
 /––––––––––––––––––––––––*/
 //=> templates/wp-page.php
 main#page {
-
     section {
         h1 {
             text-align: center;
@@ -212,9 +211,9 @@ main#subsites {
 
 .footer {
     width: 100vw;
-    margin-top: auto;
-    color: #fff;
-    background: transparent;
+    margin-top: 100px;
+    color: #ada6bb;
+    background: #dfdce4;
 
     &-rs {
         text-align: center;
@@ -240,7 +239,7 @@ main#subsites {
         padding: 0;
 
         .nav-link {
-            color: $color-light;
+            color: #ada6bb;
             padding: 0 0 0.5rem 0;
         }
     }
@@ -253,14 +252,16 @@ main#subsites {
 
     .credits {
         background-color: transparent;
-        color: #fff;
+        color: #ada6bb;
 
         .theme_logo {
-            color: #fff;
+            color: #ada6bb;
             margin-left: auto;
 
             img {
                 width: 100px;
+                filter: grayscale(80%) brightness(0.4);
+                opacity: .5;
             }
         }
 

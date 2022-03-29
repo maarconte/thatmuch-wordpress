@@ -162,6 +162,26 @@ p {
     background-image: url("assets/images/Background-w.png");
     background-repeat: repeat;
 
+    h1 {
+        font-size: 1.5rem !important;
+    }
+
+    p {
+        font-size: 20px !important;
+    }
+
+    a {
+        font-size: 16px !important;
+    }
+
+    .btn {
+        padding: 10px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
     .navbar {
         display: none;
     }
@@ -175,6 +195,13 @@ p {
         text-align: center;
         padding-top: 20vh;
 
+        @media only screen and (max-width: 480px) {
+            display: grid;
+            place-items: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
         img {
             width: 400px;
             margin: 0 auto;
@@ -187,7 +214,10 @@ p {
         padding: 30px;
         max-width: 800px;
         margin: 0 auto;
-        transform: translateY(-30%);
+
+        @media only screen and (min-width: 480px) {
+            transform: translateY(-30%);
+        }
     }
 
     .content {
@@ -202,7 +232,8 @@ p {
         img {
             margin: 0 auto 100px;
             display: block;
-            max-width: 400px;
+            width: 400px;
+            max-width: 100%;
         }
     }
 }

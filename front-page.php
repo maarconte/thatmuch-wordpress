@@ -11,7 +11,7 @@
 
 <? get_header(); ?>
 
-  <main class="content-area">
+  <main class="content-area front-page">
 <section class="hero">
 	<div class="container">
 		<img src="<?php echo get_template_directory_uri() ?>/assets/images/Logo.png" alt="thatmuch logo">

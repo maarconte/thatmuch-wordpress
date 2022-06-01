@@ -15,7 +15,7 @@
     <!--=== OPEN-GRAPH TAGS ===-->
     <? stanlee_ogtags() ?>
     <!--=== PRELOAD FONTS ===-->
-    <? stanlee_preload_fonts() ?>
+    <? // stanlee_preload_fonts() ?>
     <!--=== WP HEAD ===-->
     <? wp_head(); ?>
   </head>
@@ -55,7 +55,7 @@
 <script>
   $(function() {
     var header = $(".navbar");
-    $(window).scroll(function() {    
+    $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll >= 50) {
             header.addClass("navbar-scroll");
@@ -71,5 +71,5 @@
             </header>
 <?php endif; ?>
     <div id="content" class="site-content">
-        
+
 
